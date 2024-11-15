@@ -2,6 +2,7 @@ import { fileURLToPath, URL } from 'node:url'
 import { resolve } from 'pathe'
 import presetIcons from '@unocss/preset-icons'
 import { bundledLanguages } from 'shiki'
+import primeVueConfig from './primevue.config'
 
 import site from './site'
 const {
@@ -17,7 +18,7 @@ const {
 
 export default defineNuxtConfig({
   extends: [
-    './app-nuxt-tailwindcss-layer', // NavBar and Footer components
+    './app-nuxt-primevue-tailwindcss-layer', // NavBar and Footer components
   ],
   // ssr: false,
   // devtools: { enabled: false }, // enabled by default, disable when using standalone Vue devtools
@@ -56,6 +57,7 @@ export default defineNuxtConfig({
   },
 
   modules: [
+    '@primevue/nuxt-module',
     '@pinegrow/nuxt-module',
     '@unocss/nuxt',
     '@nuxt/content',
@@ -97,11 +99,17 @@ export default defineNuxtConfig({
 
   css: [
     '@/assets/css/tailwind.css',
+    '@/assets/css/main.css',
     'lite-youtube-embed/src/lite-yt-embed.css',
   ],
 
+  primevue: {
+    options: primeVueConfig,
+  },
+
   postcss: {
     plugins: {
+      'postcss-import': {},
       'tailwindcss/nesting': {},
       tailwindcss: {},
       autoprefixer: {},
@@ -309,6 +317,14 @@ export default defineNuxtConfig({
     liveDesigner: {
       iconPreferredCase: 'unocss', // default value (can be removed), Nuxt UI uses the unocss format for icon names
       devtoolsKey: 'devtoolsKey', // see plugins/devtools.client.ts
+      primevue: {
+        /* Please ensure that you update the filenames and paths to accurately match those used in your project. */
+        configPath: 'primevue.config.ts', // or file where primevue is created
+        utilities: false,
+        themePath: false, // Set to false so that Design Panel is not used
+        // restartOnConfigUpdate: true,
+        // restartOnThemeUpdate: true,
+      },
       tailwindcss: {
         /* Please ensure that you update the filenames and paths to accurately match those used in your project. */
         configPath: 'tailwind.config.ts',

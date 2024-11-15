@@ -4,11 +4,11 @@
 
 export default {
   name: 'Vue Designer',
-  description: 'Vue Designer Nuxt Tailwind CSS - Quick start template',
+  description: 'Vue Designer Nuxt PrimeVue Tailwind CSS - Quick start template',
   logo: 'i-vscode-icons:file-type-coffeelint',
   author: 'Pinegrow',
-  url: 'https://pg-nuxt-tailwindcss.netlify.app',
-  github: 'https://github.com/pinegrow/pg-nuxt-tailwindcss',
+  url: 'https://pg-nuxt-primevue-tailwindcss.netlify.app',
+  github: 'https://github.com/pinegrow/pg-nuxt-primevue-tailwindcss',
   defaultLocale: 'en', // default
   identity: {
     type: 'Organization',

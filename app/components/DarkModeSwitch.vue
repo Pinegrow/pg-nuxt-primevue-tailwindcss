@@ -3,8 +3,8 @@
 </script>
 <template>
   <div class="mx-3">
-    <BaseButton
-      variant="ghost"
+    <Button
+      outlined
       class="!rounded-lg"
       aria-label="Toggle theme"
       @click="toggleDark()"
@@ -21,7 +21,7 @@
           class="text-2xl"
         />
       </transition>
-    </BaseButton>
+    </Button>
   </div>
 </template>
 <style lang="postcss">

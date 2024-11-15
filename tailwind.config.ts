@@ -7,6 +7,7 @@ import {
 import { getFontsWithFallback } from './app/utils/font'
 import { safelist } from './app/utils/colors'
 
+import tailwindcssPrimeui from 'tailwindcss-primeui'
 import tailwindTypography from '@tailwindcss/typography'
 import tailwindForms from '@tailwindcss/forms'
 import tailwindCssPluginPinegrow from '@pinegrow/tailwindcss-plugin'
@@ -14,6 +15,7 @@ import tailwindCssPluginPinegrow from '@pinegrow/tailwindcss-plugin'
 export default {
   darkMode: 'class',
   plugins: [
+    tailwindcssPrimeui,
     tailwindTypography,
     tailwindForms,
     tailwindCssPluginPinegrow({

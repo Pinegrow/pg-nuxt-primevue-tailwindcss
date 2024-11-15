@@ -1,8 +1,8 @@
-# Vue Designer Nuxt Tailwind CSS - Quick start template
+# Vue Designer Nuxt PrimeVue Tailwind CSS - Quick start template
 
-This is a starter template that pre-includes the [Pinegrow Nuxt Module](https://www.npmjs.com/package/@pinegrow/nuxt-module), [Pinegrow Tailwind CSS Plugin](https://www.npmjs.com/package/@pinegrow/tailwindcss-plugin) and other goodies for Vue Designer.
+This is a starter template that pre-includes the [Pinegrow Nuxt Module](https://www.npmjs.com/package/@pinegrow/nuxt-module), [PrimeVue](https://primevue.org/introduction/), [Pinegrow PrimeVue Plugin](https://www.npmjs.com/package/@pinegrow/primevue-plugin), [Pinegrow Tailwind CSS Plugin](https://www.npmjs.com/package/@pinegrow/tailwindcss-plugin) and other goodies for Vue Designer.
 
-Demo - https://pg-nuxt-tailwindcss.netlify.app/
+Demo - https://pg-nuxt-primevue-tailwindcss.netlify.app/
 
 ## Vue Designer
 
@@ -18,15 +18,15 @@ Clean code 😃, No lock-in - You are in control of your projects and developmen
 
 ### 1. Clone to local
 
-[Create a repo from this template on GitHub](https://github.com/pinegrow/pg-nuxt-tailwindcss/generate).
+[Create a repo from this template on GitHub](https://github.com/pinegrow/pg-nuxt-primevue-tailwindcss/generate).
 
 (or)
 
 If you prefer to do it manually with the cleaner git history
 
 ```bash
-npx giget@latest gh:pinegrow/pg-nuxt-tailwindcss my-nuxt-tailwindcss-app #project-name
-cd my-nuxt-tailwindcss-app
+npx giget@latest gh:pinegrow/pg-nuxt-primevue-tailwindcss my-nuxt-primevue-tailwindcss-app #project-name
+cd my-nuxt-primevue-tailwindcss-app
 npm install #or use pnpm
 ```
 
@@ -35,8 +35,8 @@ npm install #or use pnpm
 If you prefer a minimal template (a single empty home page) instead,
 
 ```bash
-npx giget@latest gh:pinegrow/pg-nuxt-tailwindcss#minimal my-nuxt-tailwindcss-app #project-name
-cd my-nuxt-tailwindcss-app
+npx giget@latest gh:pinegrow/pg-nuxt-primevue-tailwindcss#minimal my-nuxt-primevue-tailwindcss-app #project-name
+cd my-nuxt-primevue-tailwindcss-app
 npm install #or use pnpm
 ```
 
@@ -80,7 +80,7 @@ npm run unlighthouse # Uses npx unlighthouse from https://unlighthouse.dev/ to r
 ### Deploy to Netlify
 
 You can deploy this repo as a site on your own to explore and experiment with, by clicking this button.
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Pinegrow/pg-nuxt-tailwindcss)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Pinegrow/pg-nuxt-primevue-tailwindcss)
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
 
@@ -95,6 +95,7 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 
 ### UI Frameworks
 
+- [PrimeVue](https://primevue.org/introduction/) - PrimeVue is a complete UI suite for Vue.js consisting of a rich set of UI components, icons, blocks, and application templates.
 - [Tailwind CSS](https://tailwindcss.com/docs/guides/nuxtjs#3) - The amazing utility-first CSS framework.
 
 ### File-based CMS (markdown)
@@ -108,6 +109,7 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 ### Modules/Plugins
 
 - [Pinegrow Nuxt Module](https://www.npmjs.com/package/@pinegrow/nuxt-module) - enables you to live-design your Vue single-file components visually in Vue Designer.
+- [Pinegrow PrimeVue Plugin](https://www.npmjs.com/package/@pinegrow/primevue-plugin) - via Design Panel, enables theme customization (optional) and visual controls for Primevue utilities. Note: This is an addon that's licensed separately to Pinegrow apps (like Vue Designer).
 - [Pinegrow Tailwind CSS Plugin](https://www.npmjs.com/package/@pinegrow/tailwindcss-plugin) - via Design Panel, enables visual controls customization (automatic) and theme customization (optional).
 - [VueUse](https://vueuse.org/) - collection of essential Vue composition utilities.
 - 🍍 [Pinia](https://pinia.vuejs.org/ssr/nuxt.html) stores for global state management via the `@pinia/nuxt module`. Its light-weight, type-safe, extensible, modular with vue-devtools support.
