@@ -5,6 +5,7 @@ import type { Config as TWConfig } from 'tailwindcss'
 // TODO: color not getting imported
 import type defaultColors from 'tailwindcss/colors.js'
 import { pg_colors } from '../../themes/pg-tailwindcss/tokens.mjs'
+
 // // @ts-ignore
 // delete defaultColors.lightBlue
 // // @ts-ignore
@@ -119,8 +120,7 @@ const safelistComponentAliasesMap = {
 
 const colorsAsRegex = (colors: string[]): string => colors.join('|')
 
-// eslint-disable-next-line @typescript-eslint/ban-types
-type ColorConfig = Exclude<TWConfig['theme']['colors'], Function>
+type ColorConfig = Exclude<TWConfig['theme']['colors'], () => void>
 
 export const excludeColors = (
   colors: ColorConfig | typeof defaultColors,
